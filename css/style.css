@@ -1,0 +1,30 @@
+
+form{
+    display: flex;
+    min-width: 350px;
+    width: 60vw;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    
+}
+fieldset label{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.1vw;
+}
+label input{
+    display: flex;
+    margin: 0 0.25vw;
+    font-size: 0.5vw;
+    
+}
+
+[type="submit"]{
+    margin: 0.25vw 0;
+}
+
+#error{
+    display: none;
+}

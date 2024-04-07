@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Event Registration</h1>
+  <form action="http://localhost:7000/register" method="POST">
+    <fieldset>
+        <legend>Information</legend> 
+        <label for="first-name">First Name: <input id ="first-name" type="text" name="firstName" required></label>
+        <label for="last-name">Last Name: <input id ="last-name" type="text" name="lastName" required></label>
+        <label for="id">ID: <input id ="id" type="text" name="id" ></label>
+        <label for="status">Status: <input id ="status" list="status-list" name="status" required> 
+          <datalist id="status-list">
+            <option value="Student"></option>
+            <option value="Staff"></option>
+            <option value="Volunteer"></option>
+          </datalist>
+        </label>
+        <input type="submit" value="Submit">
+        <p id="error"></p>
+    </fieldset>
+  </form>
+  <script src="./scripts/script.js"></script>  
+</body>
+</html>
